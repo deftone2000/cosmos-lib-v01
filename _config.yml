@@ -1,0 +1,139 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# theme: jekyll-theme-so-simple
+# remote_theme: mmistakes/so-simple-theme
+skin: "/assets/css/skins/default.css"
+
+locale: ko-KR
+title: "COSMO'S Lib"
+description: "과거에도 있었고 현재에도 있으며 미래에도 있을 그 모든 것"
+baseurl: # "/cosmos-lib-v01" # "/so-simple-theme"
+url: "http://deftone2000.github.io/cosmos-lib-v01"
+logo: "/images/cosmo's-site-logo.png"
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: 150
+mathjax: true
+google_fonts:
+  - name: "Noto Sans KR"
+    weights: "100,100i,500,500i"
+  - name: "Nanum Gothic"
+    weights: "400,400i,700,700i"
+google_analytics: "UA-90726805-1"
+disqus:
+  shortname: "https-deftone2000-github-io"
+twitter:
+  username: "deftone2000"
+google_site_verification: # "AuHCstEJsS6l1-GDI4uGCxikaTiXPZJz-7lmYTqPAa0"
+
+# Liquid
+liquid:
+  error_mode: strict
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 9  # amount of posts to show per page
+paginate_path: /page:num/
+
+# Search
+search_full_content: true
+
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude: [Rakefile]
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Recipe defaults
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+
+# Site Author
+author:
+  name: 코스모
+  picture: /images/jungsoo-lim-photo.jpg
+  email: deftone2000@gmail.com
+  twitter: deftone2000
+  links:
+    - title: Twitter
+      url: https://twitter.com/deftone2000
+      icon: fab fa-twitter-square
+    - title: Instagram
+      url: https://instagram.com/deftone2000
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/deftone2000
+      icon: fab fa-github-square
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/deftone2000
+    icon: fab fa-twitter-square
+  - title: Instagram
+    url: https://instagram.com/deftone2000
+    icon: fab fa-instagram
+  - title: GitHub
+    url: https://github.com/deftone2000
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square

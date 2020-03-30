@@ -1,1 +1,0 @@
-# cosmos-lib-v01
