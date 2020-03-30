@@ -21,7 +21,7 @@ skin: "/assets/css/skins/default.css"
 locale: ko-KR
 title: "COSMO'S Lib"
 description: "과거에도 있었고 현재에도 있으며 미래에도 있을 그 모든 것"
-baseurl: # "/cosmos-lib-v01" # "/so-simple-theme"
+baseurl: "/cosmos-lib-v01" # "/so-simple-theme"
 url: "http://deftone2000.github.io/cosmos-lib-v01"
 logo: "/images/cosmo's-site-logo.png"
 date_format: "%B %-d, %Y"
