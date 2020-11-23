@@ -33,7 +33,7 @@ TE를 이용하면 타임로그처럼 오늘날짜를 자동으로 입력 할 �
 이렇게 사용하면 됩니다만, LCP에서 Fantastical2로 일자정보를 보낼때 TextExpander의 단축키가 아닌 일자정보로 변경한 다음 입력되어야 하기 때문입니다. 이해를 위해서 앞뒤에 **[ ]** 를 하나씩 제거하고 실행해 보시면 금방 이해되실 꺼에요. 
 
 {% raw %}
-```  
+```  scheme
 fantastical2://x-callback-url/parse?sentence=[prompt:어떤 미리알림을 등록 할까요?]%20[[list:일정을 선택하세요.|Today=<ddat>|Tomorrow=<ttom>|3 Days Later=<ttdl>|NextWeek=<nnwk>|NextMonth=<nnmo>]]&x-success={{launchpro://}}
 ```
 {% endraw %}
